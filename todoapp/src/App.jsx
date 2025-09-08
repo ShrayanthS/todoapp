@@ -5,6 +5,7 @@ import TaskManager from './Components/TaskManager'
 import TaskOutput from './Components/TaskOutput'
 import Login from './Components/Login';
 import Message from './Components/Message';
+import Test from './Components/Test';
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
       </h1> */}
 
       {/* <TaskManager /> */}
-
+  <Test/>
 
        <nav>
         <NavLink to="/register">Register Page</NavLink> <br></br>
