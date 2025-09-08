@@ -1,14 +1,14 @@
-name : Test Workflow
+name: Test Workflow
 
- on:
+on:
   push:
     branches:
-       -master
+      - master
 
 jobs:
   hello:
-  runs-on: ubuntu-latest
-  steps:
-    -name: Say hello
-     run: echo "Workflow is working" 
- 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo " Workflow is working!"
+
