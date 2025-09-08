@@ -4,6 +4,7 @@ import TaskInput from './Components/TaskInput'
 import TaskManager from './Components/TaskManager'
 import TaskOutput from './Components/TaskOutput'
 import Login from './Components/Login';
+import Message from './Components/Message';
 
 function App() {
   
@@ -18,8 +19,9 @@ function App() {
 
 
        <nav>
-        <NavLink to="/register">Register</NavLink> <br></br>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/register">Register Page</NavLink> <br></br>
+        <NavLink to="/login">Login Page</NavLink>
+        <NavLink to="/message">Message</NavLink>
       </nav>
 
       <Routes>
@@ -27,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/tasks" element={<TaskManager/>}/>
         <Route path="" element={<Navigate to="/" />}/>
+        <Route path='/message' element={<Message/>}></Route>
       </Routes>
 
 
